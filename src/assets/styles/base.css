@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+/* 常用样式margin，padding为0.用通配符表示全部元素，消耗内存大。 */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0;} 
+/* 设置字体样式继承  word-wrap：break-word；换行方式改变为把单词切断换行，但是不会强行换行*/
+/* body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff; word-wrap:break-word;} */
+/* a标签没有下划线，继承父元素的颜色 */
+a{text-decoration:none;color: inherit;}
+/* ，没有倾斜，没有加粗，没有下划线 */
+em,i,strong,b{font-style:normal;font-weight: 100;text-decoration:none;}
+/* li标签没有列表符号 */
+li{list-style:none;}
+/* 修复img标签自带bug，上下4px左右边距消失，在ie早期浏览器中的自带边框bug去除 */
+img{border:0;display: block;} 
+table{border-collapse:collapse;border-spacing:0;}
+/* 类名首行缩进两个字符 */
+.ind{text-indent:2em;}
+.noborder{border:0;}
+/* 清楚浮动 */
+.clear:after{content:"." ;clear:both;height:0;overflow:hidden;visibility:hidden;display:block;}
+input{
+    outline: 0;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+/* 公共样式 */
+html,body,#app, .home,  .el-container , .login{
+    height: 100%;
+}
+
+.el-menu--collapse .el-submenu__title span {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.el-menu--collapse .el-menu-item .el-submenu__icon-arrow, .el-menu--collapse .el-submenu .el-submenu__title .el-submenu__icon-arrow {
+    display: none;
+}
+.el-menu-item-group .el-menu-item{
+   padding:0 0 0 30px;
+
+}
+
+.el-menu-item-group .el-menu-item-group__title{
+    padding:0
+}
+
+/* 引入进度条样式 */
+#nprogress .bar { /*进度条样式*/
+    background: hotpink !important;
+}
+
+.spinner-icon {/*圆圈样式*/
+border-top-color: #f56c6c!important;
+border-left-color: #003df1!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
